@@ -1,0 +1,71 @@
+6A STACKING OF PARAGRAPHS.html
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN">
+<html>
+<head>      
+<title>The Stacking order</title>
+<style type=text/css>
+            .a
+            {
+                border:solid thick pink;
+                padding:1em;
+                width:500px;
+                background-color:green;
+                position:absolute;
+                top:100px;
+                left:400px;
+                z-index:1;
+                
+           }
+           .b
+            {
+                border:solid thick black;
+                padding:1em;
+                width:500px;
+                background-color:blue;
+                position:absolute;
+                top:120px;
+                left:420px;
+                z-index:2;
+                
+           }
+           .c
+            {
+                border:solid thick green;
+                padding:1em;
+                width:500px;
+                background-color:white;
+                position:absolute;
+                top:140px;
+                left:440px;
+                z-index:3;
+                
+           }
+</style>
+
+<script type=text/javascript>
+var toplayer="3";
+        function mover(totop)
+        {
+            var oldtop=document.getElementById(toplayer).style;
+            var newtop=document.getElementById(totop).style;
+            oldtop.zIndex=0;
+            newtop.zIndex=25;
+            toplayer=document.getElementById(totop).id;
+        }
+</script>
+</head>
+
+<body style=background-color:yellow>
+<h2 style=text-align:center;color:red> Program includes XHTML document to show the stacking of paragraphs</h2>
+
+<p  class=a id=1 onmouseover=mover("1")>
+HTML, stands for HyperText Markup Language, is the predominant markup language for web pages.It provides a means to create structured documents .</p>
+
+<p  class=b id=2 onmouseover=mover("2")>
+XHTML eXtensable HyperText Markup Language has a more strict syntax rules in comparison of HTML. XHTML gives a more consistent, well structured format.</p>
+
+<p  class=c id=3 onmouseover=mover("3")>Internet has evolved over the last 20 years and it has made the livings of  millions highly 
+dependent on it and hence it's necessary for all to learn the way of programming the WEB.</p>
+</body>
+</html>

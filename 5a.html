@@ -1,0 +1,87 @@
+5 A embedded css.html
+<! INTERNAL OR EMBEDDED CSS>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Internal CSS</title>
+    <style>
+        .main {
+            text-align: center;
+        }
+ 
+        .ISE {
+            color: tan;
+            font-size: 50px;
+            font-weight: bold;
+        }
+ 
+        .cmr {
+            color: orange;
+	    font-style: bold;
+            font-size: 30px;
+        }
+    </style>
+</head>
+ 
+<body>
+    <div class="main">
+        <div class="ISE">Department of ISE</div>
+ 
+        <div class="cmr">
+            CMR Institute of Technology, Bengaluru
+        </div>
+    </div>
+</body>
+</html>.    Inline 5 A INLINE.HTML
+<! INLINE CSS>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Inline CSS</title>
+</head>
+ 
+<body>
+    <p style="color:green; font-size:50px;
+             font-style:italic; text-align:center;">
+        DEPARTMENT OF INFORMATION SCIENCE AND ENGINEERING<BR>
+	CMR INTITUTE OF TECHNOLOGY
+    </p>
+</body>
+</html>.   external.  5 A external css.html
+<! EXTERNAL CSS>
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="mystyle.css">
+</head>
+<body>
+
+<h1>This is a heading for External CSS</h1>
+
+<p>This is a paragraph for External CSS.
+With an external style sheet, you can change the look of an
+ entire website by changing just one file!
+Each HTML page must include a reference to the external
+style sheet file inside the <link> element, inside the head section.</p>
+
+
+
+</body>
+</html>
+
+mystyle.css
+body {
+  background-color: pink;
+}
+
+h1 {
+  color: navy;
+  margin-left: 20px;
+}
+p {
+    color: red;
+    font-family: Verdana;
+    text-align: justified;
+    font-size: 20px;
+}
